@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerador de Currículo</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="body {.css">
+</head> 
+<body>
+
+<body>
+  <main class="app">
+    <header class="hero">
+      <h1 class="hero__title">Sejam Bem-Vindos ao Gerador de Currículo</h1>
+      <p class="hero__subtitle">Preencha os campos e gere um currículo em PDF</p>
+    </header>
+
+    <section class="card">
+      <form id="formCurriculo" class="form">
+        <div class="grid">
+          <div class="field">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" required>
+          </div>
+
+          <div class="field">
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" min="10" max="99" required>
+          </div>
+
+          <div class="field">
+            <label for="endereço">Endereço</label>
+            <input type="text" id="endereço" placeholder="Rua, Bairro, Cidade..." required>
+          </div>
+
+          <div class="field">
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" placeholder="(11) 9 9999-9999" required>
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="voce@email.com" required>
+          </div>
+
+          <div class="field field--full">
+            <label for="formacao">Formação (use linhas para tópicos)</label>
+            <textarea id="formacao" rows="4" placeholder="Ex: 
+Graduação em Enfermagem — 2022
+Curso de Inglês — 2024"></textarea>
+          </div>
+
+          <div class="field field--full">
+            <label for="experiencia">Experiência Profissional (uma por linha)</label>
+            <textarea id="experiencia" rows="5" placeholder="Ex:
+Atendente de Telemarketing — 2021–2024
+Técnico de Enfermagem — 2025"></textarea>
+          </div>
+
+          <div class="field field--full">
+            <label for="habilidades">Habilidades (separe por vírgulas ou linhas)</label>
+            <textarea id="habilidades" rows="3" placeholder="Comunicativo, Trabalho em Equipe, Produtivo, Organizado...."></textarea>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn btn--primary" id="gerarBtn">Gerar Currículo</button>
+          <button type="button" class="btn btn--ghost" id="limparBtn">Limpar</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="preview card">
+      <div id="curriculoGerado" class="curriculo"></div>
+      <button id="baixarPdf" class="btn btn--success" style="display:none;">📄 Baixar PDF</button>
+    </section>
+  </main>
+
+  <script src="Untitled-1.js"></script>
+</body>
+
+
+
